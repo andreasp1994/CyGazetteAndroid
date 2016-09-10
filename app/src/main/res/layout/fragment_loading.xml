@@ -1,0 +1,45 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#395373"
+    android:orientation="vertical"
+    tools:context="com.apogiatzis.cygazetteapp.LoadingFragment">
+
+    <ImageView
+        android:src="@drawable/government_cy_outline"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:id="@+id/ivLoader"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/loading_ball"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <ImageView
+            android:src="@drawable/appicon_no_shadow256x256"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:textColor="#f1f1f1"
+        android:textSize="20sp"
+        android:text="Loading..."
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

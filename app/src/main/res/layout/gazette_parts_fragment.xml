@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#395373"
+    android:layout_height="match_parent">
+
+    <!--Top bar -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <!-- Change font for sure-->
+        <TextView
+            android:textSize="25sp"
+            android:textColor="#f1f1f1"
+            android:textStyle="bold"
+            android:text="Read Gazette"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- Gazette parts-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--TMHMA A-->
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="#f64c73">
+
+
+                <LinearLayout
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/mouse"
+                            android:layout_marginRight="10dp"
+                            android:id="@+id/ivSectionIcon"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp" />
+
+                        <TextView
+                            android:id="@+id/tvSectionName"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:text="TMHMA A"
+                            android:textColor="#f1f1f1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textColor="#f1f1f1"
+                    android:paddingRight="30dp"
+                    android:gravity="center"
+                    android:paddingLeft="30dp"
+                    android:text="Πρόεδρος, Διορισμοί, Προαγωγές, Αφυπηρετήσεις, Κενές Θέσεις, Υποτροφίες, Εξετάσεις, κ.λ.π."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:paddingTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:text="10"
+                            android:textColor="#f1f1f1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:textColor="#f1f1f1"
+                            android:text="FOLLOWERS"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:text="37"
+                            android:textColor="#f1f1f1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:textColor="#f1f1f1"
+                            android:text="CITATIONS"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:text="6"
+                            android:textColor="#f1f1f1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:textColor="#f1f1f1"
+                            android:text="FOLLOWERS"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--TMHMA B-->
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="#20d2bb">
+
+
+                <LinearLayout
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@drawable/mouse"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:text="TMHMA B"
+                        android:textColor="#f1f1f1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textColor="#f1f1f1"
+                    android:paddingRight="30dp"
+                    android:gravity="center"
+                    android:paddingLeft="30dp"
+                    android:text="Διάφορα"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:paddingTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:text="10"
+                            android:textColor="#f1f1f1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:textColor="#f1f1f1"
+                            android:text="FOLLOWERS"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:text="37"
+                            android:textColor="#f1f1f1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:textColor="#f1f1f1"
+                            android:text="CITATIONS"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:text="6"
+                            android:textColor="#f1f1f1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:textColor="#f1f1f1"
+                            android:text="FOLLOWERS"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--TMHMA C-->
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="#c873f4">
+
+
+                <LinearLayout
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@drawable/mouse"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:text="TMHMA C"
+                        android:textColor="#f1f1f1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textColor="#f1f1f1"
+                    android:paddingRight="30dp"
+                    android:gravity="center"
+                    android:paddingLeft="30dp"
+                    android:text="Προσφορές"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:paddingTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:text="10"
+                            android:textColor="#f1f1f1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:textColor="#f1f1f1"
+                            android:text="FOLLOWERS"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:text="37"
+                            android:textColor="#f1f1f1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:textColor="#f1f1f1"
+                            android:text="CITATIONS"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:text="6"
+                            android:textColor="#f1f1f1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:textColor="#f1f1f1"
+                            android:text="FOLLOWERS"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

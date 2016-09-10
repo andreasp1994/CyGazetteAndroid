@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#395373"
+    android:orientation="vertical"
+    tools:context="com.apogiatzis.cygazetteapp.FeedActivity">
+
+    <!--Top bar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp">
+
+            <ImageView
+                android:layout_marginRight="20dp"
+                android:src="@drawable/user128x128"
+                android:layout_width="50dp"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#f1f1f1"
+                    android:text="Andreas Pogiatzis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="15sp"
+                    android:textColor="#f1f1f1"
+                    android:text="No new notifications"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:onClick="ReadGazetteClicked"
+            android:layout_alignParentRight="true"
+            android:padding="15dp"
+            android:src="@drawable/readgazette"
+            android:layout_width="100dp"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/listFeed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.apogiatzis.cygazetteapp.ReadArticleFragment">
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:paddingBottom="90dp"
+        android:id="@+id/pdfViewArticle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <ImageView
+            android:id="@+id/ivDislike"
+            android:src="@drawable/dislike"
+            android:layout_width="90dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/ivLike"
+            android:src="@drawable/like"
+            android:layout_alignParentRight="true"
+            android:layout_width="90dp"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+</RelativeLayout>
