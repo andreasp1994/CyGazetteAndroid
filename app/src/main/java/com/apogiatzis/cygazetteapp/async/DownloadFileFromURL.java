@@ -6,6 +6,7 @@ import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
 import android.os.Environment;
 import android.util.Log;
+import android.widget.TextView;
 
 import com.apogiatzis.cygazetteapp.ReadArticleFragment;
 import com.apogiatzis.cygazetteapp.models.Article;

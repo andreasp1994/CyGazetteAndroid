@@ -148,6 +148,11 @@ public class GazetteActivity extends Activity implements GazetteSectionsFragment
     }
 
     @Override
+    public void onArticleSelectRegionClicked(Article article) {
+
+    }
+
+    @Override
     public void OnArticleDownloaded(Article article) {
         transitionFragment = new ReadArticleFragment();
         Bundle bundle = new Bundle();
