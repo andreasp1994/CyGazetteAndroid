@@ -65,7 +65,7 @@ public class GazetteActivity extends Activity implements GazetteSectionsFragment
                         Bundle bundle = new Bundle();
                         bundle.putParcelableArrayList(Config.ARTICLE_LIST_SERIALIZABLE_KEY, articles );
                         fragment.setArguments(bundle);
-                        changeFragment(fragment, false);
+                        changeFragment(fragment, true);
                     }
 
                     @Override

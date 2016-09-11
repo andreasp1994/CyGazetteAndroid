@@ -2,6 +2,7 @@ package com.apogiatzis.cygazetteapp;
 
 
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -45,6 +46,14 @@ public class GazetteSectionsFragment extends Fragment implements View.OnClickLis
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), FeedActivity.class);
+                startActivity(intent);
+            }
+        });
+        TextView menuSearch = (TextView) view.findViewById(R.id.menuSearch);
+        menuSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), SearchActivity.class);
                 startActivity(intent);
             }
         });

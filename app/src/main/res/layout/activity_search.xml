@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#395373"
+    android:orientation="vertical"
+    tools:context="com.apogiatzis.cygazetteapp.SearchActivity">
+
+    <RelativeLayout
+        android:background="#5379a8"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:padding="15dp"
+            android:src="@drawable/search"
+            android:layout_width="60dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:textColor="#f1f1f1"
+            android:textColorHint="#d1d1d1"
+            android:hint="Search..."
+            android:layout_width="match_parent"
+            android:layout_height="70dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:src="@drawable/government_cy_outline"
+            android:layout_width="200dp"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="200dp"
+            android:textColor="#f1f1f1"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="Search for specific keywords in the gazette"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

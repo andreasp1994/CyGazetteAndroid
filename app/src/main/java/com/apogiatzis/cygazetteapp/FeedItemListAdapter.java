@@ -1,6 +1,8 @@
 package com.apogiatzis.cygazetteapp;
 
 import android.content.Context;
+import android.media.Image;
+import android.provider.ContactsContract;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,7 +36,9 @@ public class FeedItemListAdapter extends ArrayAdapter<CitationFeedItem> {
         TextView tvDislikes;
         TextView tvComments;
         ListView lvComments;
+        ImageView ivComments;
         LinearLayout llCommentsContainer;
+        ImageView ivLikeBtn;
     }
 
     public FeedItemListAdapter(Context context, List<CitationFeedItem> feedItems){
@@ -58,6 +62,8 @@ public class FeedItemListAdapter extends ArrayAdapter<CitationFeedItem> {
             viewHolder.tvComments = (TextView) convertView.findViewById(R.id.tvComments);
             viewHolder.lvComments = (ListView) convertView.findViewById(R.id.lvComments);
             viewHolder.llCommentsContainer = (LinearLayout) convertView.findViewById(R.id.llComments);
+            viewHolder.ivComments = (ImageView) convertView.findViewById(R.id.ivComment);
+            viewHolder.ivLikeBtn = (ImageView) convertView.findViewById(R.id.ivLikeBtn);
             //Image citation
 
             convertView.setTag(viewHolder);
@@ -75,6 +81,16 @@ public class FeedItemListAdapter extends ArrayAdapter<CitationFeedItem> {
         viewHolder.lvComments.setAdapter(adapter);
 
         viewHolder.tvComments.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (viewHolder.llCommentsContainer.getVisibility() == View.GONE){
+                    viewHolder.llCommentsContainer.setVisibility(View.VISIBLE);
+                } else {
+                    viewHolder.llCommentsContainer.setVisibility(View.GONE);
+                }
+            }
+        });
+        viewHolder.ivComments.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (viewHolder.llCommentsContainer.getVisibility() == View.GONE){
