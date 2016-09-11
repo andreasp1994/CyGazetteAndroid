@@ -188,7 +188,7 @@
                         android:layout_height="200dp"
                         android:gravity="center"
                         android:orientation="vertical"
-                        android:background="#20d2bb">
+                        android:background="#1fcbb5">
 
 
                         <LinearLayout

@@ -25,7 +25,7 @@ public class GazetteAPI {
     //TODO: make this class a signleton
     private static GazetteAPI instance = null;
 
-    private final String HOST = "192.168.10.86";
+    private final String HOST = "192.168.1.135";
     private final String PORT = "2403";
 
     private IGazetteAPI service;
