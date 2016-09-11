@@ -1,6 +1,7 @@
 package com.apogiatzis.cygazetteapp;
 
 
+import android.content.Intent;
 import android.graphics.Rect;
 import android.media.Image;
 import android.net.Uri;
@@ -14,6 +15,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.apogiatzis.cygazetteapp.misc.Config;
@@ -22,6 +24,7 @@ import com.github.barteksc.pdfviewer.PDFView;
 import com.github.barteksc.pdfviewer.listener.OnLoadCompleteListener;
 import com.github.barteksc.pdfviewer.listener.OnPageScrollListener;
 import com.itextpdf.text.pdf.parser.Line;
+import com.itextpdf.text.pdf.parser.LocationTextExtractionStrategy;
 
 import java.io.File;
 
@@ -85,7 +88,6 @@ public class ReadArticleFragment extends Fragment implements OnLoadCompleteListe
                 mListener.onArticleSelectRegionClicked(article);
             }
         });
-
 
         return view;
     }

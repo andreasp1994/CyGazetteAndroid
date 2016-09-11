@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.apogiatzis.cygazetteapp.models.Section;
 
@@ -38,6 +39,15 @@ public class GazetteSectionsFragment extends Fragment implements View.OnClickLis
         llSectionTmhmaC.setOnClickListener(this);
 
         this.mListener = (OnSectionClickedListener) getActivity();
+
+        TextView menuFeed = (TextView) view.findViewById(R.id.menuFeed);
+        menuFeed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), FeedActivity.class);
+                startActivity(intent);
+            }
+        });
 
         return view;
     }

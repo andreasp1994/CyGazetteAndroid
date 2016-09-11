@@ -4,7 +4,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
-    android:layout_height="450dp"
+    android:layout_height="wrap_content"
     android:background="@drawable/feed_bg"
     android:orientation="vertical"
     tools:context="com.apogiatzis.cygazetteapp.FeedActivity">
@@ -154,6 +154,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:visibility="gone"
         android:padding="20dp"
         android:orientation="vertical"
         android:id="@+id/llComments"
@@ -167,6 +168,7 @@
             android:layout_height="1dp"/>
 
         <ListView
+            android:id="@+id/lvComments"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 

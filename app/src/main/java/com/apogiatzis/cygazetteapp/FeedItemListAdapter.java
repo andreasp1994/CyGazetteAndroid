@@ -6,11 +6,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.apogiatzis.cygazetteapp.models.Article;
 import com.apogiatzis.cygazetteapp.models.CitationFeedItem;
+import com.apogiatzis.cygazetteapp.models.Comment;
 import com.apogiatzis.cygazetteapp.models.FeedItem;
 
 import java.util.List;
@@ -30,6 +33,8 @@ public class FeedItemListAdapter extends ArrayAdapter<CitationFeedItem> {
         TextView tvLikes;
         TextView tvDislikes;
         TextView tvComments;
+        ListView lvComments;
+        LinearLayout llCommentsContainer;
     }
 
     public FeedItemListAdapter(Context context, List<CitationFeedItem> feedItems){
@@ -51,8 +56,8 @@ public class FeedItemListAdapter extends ArrayAdapter<CitationFeedItem> {
             viewHolder.tvDislikes = (TextView) convertView.findViewById(R.id.tvDislikes);
             viewHolder.tvUser = (TextView) convertView.findViewById(R.id.tvUser);
             viewHolder.tvComments = (TextView) convertView.findViewById(R.id.tvComments);
-            //Create new commments
-            //
+            viewHolder.lvComments = (ListView) convertView.findViewById(R.id.lvComments);
+            viewHolder.llCommentsContainer = (LinearLayout) convertView.findViewById(R.id.llComments);
             //Image citation
 
             convertView.setTag(viewHolder);
@@ -64,6 +69,21 @@ public class FeedItemListAdapter extends ArrayAdapter<CitationFeedItem> {
         viewHolder.tvDislikes.setText(feedItem.getDislikes().toString());
         viewHolder.tvUser.setText(feedItem.getUser());
         viewHolder.tvComments.setText(String.valueOf(feedItem.getComments().size()));
+
+        List<Comment> comments = feedItem.getComments();
+        CommentsListAdapter adapter = new CommentsListAdapter(this.mContext, comments);
+        viewHolder.lvComments.setAdapter(adapter);
+
+        viewHolder.tvComments.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (viewHolder.llCommentsContainer.getVisibility() == View.GONE){
+                    viewHolder.llCommentsContainer.setVisibility(View.VISIBLE);
+                } else {
+                    viewHolder.llCommentsContainer.setVisibility(View.GONE);
+                }
+            }
+        });
 
         return convertView;
     }
